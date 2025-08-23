@@ -54,6 +54,13 @@
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Custom colors for Melissa's site */
+    --melba-beige: #DDD8D1;
+    --melba-red: #AA3833;
+    --melba-brown: #864737;
+    --melba-gold: #EDC285;
+    --melba-light-gray: #D9D9D9;
   }
 
   .dark {
