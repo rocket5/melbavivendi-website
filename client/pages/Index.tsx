@@ -9,7 +9,7 @@ export default function Index() {
       }}
     >
       <div
-        className="w-full max-w-[942px] rounded-2xl flex flex-col lg:flex-row items-start justify-center gap-6 lg:gap-6"
+        className="w-full max-w-[95vw] lg:max-w-[1100px] rounded-2xl flex flex-col lg:flex-row items-start justify-center gap-6 lg:gap-6"
         style={{
           background: 'linear-gradient(128deg, var(--melba-red) 1.32%, var(--melba-brown) 98.8%)',
           boxShadow: '2px 2px 4px 0 rgba(0, 0, 0, 0.25)',
@@ -19,7 +19,7 @@ export default function Index() {
       >
         {/* Left Column */}
         <div
-          className="flex flex-col items-center w-full lg:w-[283px] lg:flex-shrink-0"
+          className="flex flex-col items-center w-full lg:w-[260px] xl:w-[283px] lg:flex-shrink-0"
           style={{
             gap: 'min(48px, 6vw)'
           }}
@@ -87,7 +87,7 @@ export default function Index() {
 
         {/* Right Column */}
         <div
-          className="flex flex-col items-start w-full lg:w-[578px] lg:flex-shrink-0"
+          className="flex flex-col items-start w-full lg:flex-1 lg:min-w-0"
           style={{
             gap: 'min(24px, 3vw)'
           }}
