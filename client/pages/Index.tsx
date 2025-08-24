@@ -2,19 +2,22 @@ import { Mail, MapPin } from "lucide-react";
 import GlareHover from "@/components/GlareHover";
 
 export default function Index() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div
-      className="min-h-screen flex items-center justify-center font-inter px-4 py-8 sm:px-8 sm:py-12 lg:px-[249px] lg:py-[72px]"
+      className="min-h-screen flex flex-col items-center justify-center font-inter px-4 py-8 sm:px-8 sm:py-12 lg:px-[249px] lg:py-[72px]"
       style={{
         background: 'var(--melba-beige)',
         overscrollBehavior: 'none',
-        WebkitOverflowScrolling: 'touch'
+        WebkitOverflowScrolling: 'touch',
+        gap: '15px'
       }}
     >
       <div
-        className="w-full max-w-[95vw] lg:max-w-[1100px] rounded-2xl flex flex-col lg:flex-row items-start justify-center gap-6 lg:gap-6"
+        className="w-full max-w-[95vw] lg:max-w-[942px] rounded-2xl flex flex-col lg:flex-row items-start justify-center gap-6 lg:gap-6"
         style={{
-          background: 'linear-gradient(128deg, var(--melba-red) 1.32%, var(--melba-brown) 98.8%)',
+          background: 'linear-gradient(128deg, var(--melba-red) 40.78%, var(--melba-orange) 98.8%)',
           boxShadow: '2px 2px 4px 0 rgba(0, 0, 0, 0.25)',
           padding: 'min(40px, 5vw) min(29px, 4vw) min(30px, 4vw) min(28px, 4vw)',
           minHeight: '600px'
@@ -74,7 +77,7 @@ export default function Index() {
                 glareOpacity={0.3}
                 className="flex flex-col justify-center items-center w-full"
                 style={{
-                  padding: 'min(8px, 1vw) min(12px, 2vw)',
+                  padding: '16px',
                   gap: '10px',
                   borderWidth: '1px',
                   boxShadow: '2px 2px 4px 0 rgba(0, 0, 0, 0.25)'
@@ -220,7 +223,7 @@ export default function Index() {
                 glareOpacity={0.3}
                 className="flex flex-col justify-center items-center w-full"
                 style={{
-                  padding: 'min(8px, 1vw) min(12px, 2vw)',
+                  padding: '16px',
                   gap: '10px',
                   borderWidth: '1px',
                   boxShadow: '2px 2px 4px 0 rgba(0, 0, 0, 0.25)'
@@ -239,6 +242,17 @@ export default function Index() {
             ))}
           </div>
         </div>
+      </div>
+
+      {/* Copyright Footer */}
+      <div
+        className="text-center font-normal text-base opacity-60"
+        style={{
+          color: 'rgba(0, 0, 0, 0.60)',
+          lineHeight: 'normal'
+        }}
+      >
+        © {currentYear} Melissa Rombout. All rights reserved.
       </div>
     </div>
   );
