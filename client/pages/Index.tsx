@@ -1,4 +1,5 @@
 import { Mail, MapPin } from "lucide-react";
+import GlareHover from "@/components/GlareHover";
 
 export default function Index() {
   return (
@@ -62,13 +63,19 @@ export default function Index() {
               "Strategic messaging and communications planning",
               "Audience engagement program development"
             ].map((skill, index) => (
-              <div
+              <GlareHover
                 key={index}
-                className="flex flex-col justify-center items-center w-full rounded-2xl border"
+                width="100%"
+                height="auto"
+                background="transparent"
+                borderRadius="1rem"
+                borderColor="var(--melba-light-gray)"
+                glareColor="#EDC285"
+                glareOpacity={0.3}
+                className="flex flex-col justify-center items-center w-full"
                 style={{
                   padding: 'min(8px, 1vw) min(12px, 2vw)',
                   gap: '10px',
-                  borderColor: 'var(--melba-light-gray)',
                   borderWidth: '1px',
                   boxShadow: '2px 2px 4px 0 rgba(0, 0, 0, 0.25)'
                 }}
@@ -82,7 +89,7 @@ export default function Index() {
                 >
                   {skill}
                 </div>
-              </div>
+              </GlareHover>
             ))}
           </div>
         </div>
@@ -157,15 +164,16 @@ export default function Index() {
                   flexShrink: 0
                 }}
               />
-              <div
-                className="font-normal text-base sm:text-lg break-all sm:break-normal"
+              <a
+                href="mailto:melba@melbavivendi.com"
+                className="font-normal text-base sm:text-lg break-all sm:break-normal hover:underline transition-all duration-200"
                 style={{
                   color: 'var(--melba-light-gray)',
                   lineHeight: 'normal'
                 }}
               >
                 melba@melbavivendi.com
-              </div>
+              </a>
             </div>
           </div>
 
@@ -201,13 +209,19 @@ export default function Index() {
               "Strategic messaging and communications planning",
               "Audience engagement program development"
             ].map((skill, index) => (
-              <div
+              <GlareHover
                 key={`mobile-${index}`}
-                className="flex flex-col justify-center items-center w-full rounded-2xl border"
+                width="100%"
+                height="auto"
+                background="transparent"
+                borderRadius="1rem"
+                borderColor="var(--melba-light-gray)"
+                glareColor="#EDC285"
+                glareOpacity={0.3}
+                className="flex flex-col justify-center items-center w-full"
                 style={{
                   padding: 'min(8px, 1vw) min(12px, 2vw)',
                   gap: '10px',
-                  borderColor: 'var(--melba-light-gray)',
                   borderWidth: '1px',
                   boxShadow: '2px 2px 4px 0 rgba(0, 0, 0, 0.25)'
                 }}
@@ -221,7 +235,7 @@ export default function Index() {
                 >
                   {skill}
                 </div>
-              </div>
+              </GlareHover>
             ))}
           </div>
         </div>
