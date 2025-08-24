@@ -107,7 +107,16 @@
     @apply border-border;
   }
 
+  html {
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
   body {
     @apply bg-background text-foreground;
+    overscroll-behavior: none;
+    position: relative;
+    min-height: 100vh;
+    background: #DDD8D1; /* melba-beige fallback */
   }
 }

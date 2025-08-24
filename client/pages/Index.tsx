@@ -5,7 +5,9 @@ export default function Index() {
     <div
       className="min-h-screen flex items-center justify-center font-inter px-4 py-8 sm:px-8 sm:py-12 lg:px-[249px] lg:py-[72px]"
       style={{
-        background: 'var(--melba-beige)'
+        background: 'var(--melba-beige)',
+        overscrollBehavior: 'none',
+        WebkitOverflowScrolling: 'touch'
       }}
     >
       <div
