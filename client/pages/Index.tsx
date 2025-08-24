@@ -19,7 +19,7 @@ export default function Index() {
       >
         {/* Left Column */}
         <div
-          className="flex flex-col items-center w-full lg:w-[260px] xl:w-[283px] lg:flex-shrink-0"
+          className="flex flex-col items-start lg:items-center w-full lg:w-[260px] xl:w-[283px] lg:flex-shrink-0"
           style={{
             gap: 'min(48px, 6vw)'
           }}
@@ -46,9 +46,9 @@ export default function Index() {
             />
           </div>
 
-          {/* Skills Section */}
+          {/* Skills Section - Desktop Only */}
           <div
-            className="flex flex-col items-start w-full"
+            className="hidden lg:flex flex-col items-start w-full"
             style={{
               gap: '24px'
             }}
@@ -182,6 +182,45 @@ export default function Index() {
             From my early career as a specialist in historical and contemporary photography, I have worked across a diverse range of interpretive projects: fine art and visual communication, natural history and cultural heritage, agricultural science and technological innovation. My recent projects have connected climate science and visual culture. I have activated artist/scientist engagement in ocean literacy initiatives and considered the resurgence of "extinct" photographic technologies as medium and metaphor in addressing eco-anxiety.
             <br /><br />
             My new book, Yousuf Karsh: Life & Work (forthcoming 2025), was commissioned by the Art Canada Institute. The monograph explores the celebrated portrait photographer's artistic choices in the context of image making and image sharing, and critically, the role of the portrait in the contemporary social space.
+          </div>
+
+          {/* Skills Section - Mobile Only */}
+          <div
+            className="lg:hidden flex flex-col items-start w-full"
+            style={{
+              gap: '24px',
+              paddingTop: '16px'
+            }}
+          >
+            {[
+              "Masterplanning for cultural and heritage sites",
+              "Exhibition development",
+              "Cultural resources analysis",
+              "Strategic messaging and communications planning",
+              "Audience engagement program development"
+            ].map((skill, index) => (
+              <div
+                key={`mobile-${index}`}
+                className="flex flex-col justify-center items-center w-full rounded-2xl border"
+                style={{
+                  padding: 'min(8px, 1vw) min(12px, 2vw)',
+                  gap: '10px',
+                  borderColor: 'var(--melba-light-gray)',
+                  borderWidth: '1px',
+                  boxShadow: '2px 2px 4px 0 rgba(0, 0, 0, 0.25)'
+                }}
+              >
+                <div
+                  className="text-center font-normal text-sm sm:text-base w-full"
+                  style={{
+                    color: 'var(--melba-light-gray)',
+                    lineHeight: 'normal'
+                  }}
+                >
+                  {skill}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
