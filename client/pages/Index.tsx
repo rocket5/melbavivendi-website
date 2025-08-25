@@ -64,7 +64,7 @@ export default function Index() {
               "Exhibition development",
               "Cultural resources analysis",
               "Strategic messaging and communications planning",
-              "Audience engagement program development"
+              "Audience engagement and program development"
             ].map((skill, index) => (
               <GlareHover
                 key={index}
@@ -210,7 +210,7 @@ export default function Index() {
               "Exhibition development",
               "Cultural resources analysis",
               "Strategic messaging and communications planning",
-              "Audience engagement program development"
+              "Audience engagement and program development"
             ].map((skill, index) => (
               <GlareHover
                 key={`mobile-${index}`}
