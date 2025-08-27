@@ -9,7 +9,7 @@ This site automatically builds and deploys to GitHub Pages at [melbavivendi.com]
 ### Automatic Deployment Process
 
 1. **Trigger**: Push to main branch
-2. **Build**: GitHub Actions runs `pnpm build:client` 
+2. **Build**: GitHub Actions runs `npm run build:client` 
 3. **Deploy**: Built files from `dist/spa/` are deployed to GitHub Pages
 4. **Domain**: Site is served at custom domain `melbavivendi.com`
 
@@ -24,7 +24,7 @@ If you need to set up GitHub Pages manually:
 ### Local Development
 
 ```bash
-pnpm dev        # Start development server
-pnpm build      # Build both client and server
-pnpm typecheck  # Type checking
+npm run dev        # Start development server
+npm run build      # Build both client and server
+npm run typecheck  # Type checking
 ```

@@ -20,7 +20,7 @@ This is a personal website for Melissa Rombout (PhD), a curator and cultural ana
 - UI: Radix UI components with shadcn/ui patterns
 - Testing: Vitest
 - Styling: TailwindCSS with custom design tokens
-- Package Manager: pnpm (required)
+- Package Manager: npm
 
 ### Path Aliases
 - `@/` maps to `client/`
@@ -30,28 +30,28 @@ This is a personal website for Melissa Rombout (PhD), a curator and cultural ana
 
 ```bash
 # Development (starts both client and server on port 8080)
-pnpm dev
+npm run dev
 
 # Production build (builds both client and server)
-pnpm build
+npm run build
 
 # Build client only
-pnpm build:client
+npm run build:client
 
 # Build server only  
-pnpm build:server
+npm run build:server
 
 # Start production server
-pnpm start
+npm start
 
 # Type checking
-pnpm typecheck
+npm run typecheck
 
 # Testing
-pnpm test
+npm test
 
 # Code formatting
-pnpm format.fix
+npm run format.fix
 ```
 
 ## Project Structure
