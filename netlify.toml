@@ -8,18 +8,6 @@
   external_node_modules = ["express"]
   node_bundler = "esbuild"
   
-# Redirect old HTML routes to homepage
-[[redirects]]
-  from = "/portfolio.html"
-  to = "/"
-  status = 301
-
-[[redirects]]
-  from = "/contact.html"
-  to = "/"
-  status = 301
-
-# API function redirect
 [[redirects]]
   force = true
   from = "/api/*"
